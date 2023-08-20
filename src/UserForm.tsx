@@ -1,17 +1,18 @@
 
 const UserForm = () => {
   return (
-      <form >
-          <div>
-              <label>Name</label>
+    <form>
+      <div>
+        <label>Name</label>
         <input />
-      <br />
-              <label>Name</label>
-              <input  />
-          
-          </div> 
+      </div>
+      <div>
+        <label>Name</label>
+        <input />
+      </div>
+      <button>Add User</button>
     </form>
-  )
+  );
 }
 
 export default UserForm
