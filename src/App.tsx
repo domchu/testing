@@ -1,14 +1,19 @@
-import './App.css'
-import UserForm from './UserForm';
+import { useState } from "react";
+import "./App.css";
+import UserForm from "./UserForm";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [users, setUsers] = useState([]);
+
+  const onUserAdd = (user: any[]) => {
+    setUsers([...users, user]);
+  };
 
   return (
     <>
-      <UserForm/>
+      <UserForm />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
